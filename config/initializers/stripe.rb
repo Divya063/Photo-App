@@ -6,4 +6,4 @@ Rails.configuration.stripe = {
 
 p Rails.configuration.stripe[:secret_key]
 
-Stripe.api_key = "sk_test_GnXMfIGW64C9mbQDyoh4rZM300ElsujgFP"
+Stripe.api_key = Rails.configuration.stripe[:secret_key]
