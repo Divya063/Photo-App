@@ -20,7 +20,6 @@ Rails.application.configure do
 
 
   ActionMailer::Base.smtp_settings = {
-    :from                 => 'ranidivya063@email.com',
     :user_name            => ENV['SENDGRID_USERNAME'],
     :password             => ENV['SENDGRID_PASSWORD'],
     :domain               => 'https://divya063-photo-app.herokuapp.com',
