@@ -5,16 +5,11 @@ Stripe.setPublishableKey("<%= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>");
 </script>
 
 <h1><%= t('.sign_up') %></h1>
-
+#allows the user to create or update the attributes of a specific model object.
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { role: "form", class: "cc_form" })  do |f| %>
 
 
   <%= bootstrap_devise_error_messages! %>
-
-  <div class="form-group">
-    <%= f.label :name %>
-        <%= f.text_field :name, autofocus: true %>
-  </div>
 
   <div class="form-group">
     <%= f.label :email %>
@@ -37,6 +32,7 @@ Stripe.setPublishableKey("<%= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>");
 
 
   <%= fields_for( :payment ) do |p| %>
+  
 
     <div class="row col-md-12">
     

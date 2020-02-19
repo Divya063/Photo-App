@@ -48,7 +48,7 @@ $(document).on('ready turbolinks:load', function() {
     
     $("[data-stripe=number]").remove();
     
-    $("[data-stripe=cvv]").remove();
+    $("[data-stripe=cvc]").remove();
     
     $("[data-stripe=exp-year]").remove();
     
