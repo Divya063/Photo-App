@@ -16,8 +16,6 @@ ActiveRecord::Schema.define(version: 2020_02_19_021254) do
     t.string "email"
     t.string "token"
     t.integer "user_id"
-    t.string "name"
-    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -4,8 +4,6 @@ class CreatePayments < ActiveRecord::Migration[5.2]
       t.string :email
       t.string :token
       t.integer :user_id
-      t.string :name
-      t.string :address
 
       t.timestamps
     end
